@@ -112,14 +112,47 @@ small   {
         font-size: 40px; 
     }
 
-/* Main Content */
+/* Main */
+#main-content {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#intro {
+    text-align: left;
+}
+
+#intro h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#intro p {
+    font-size: 1.2em; 
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#img-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#img-grid img, #img-grid picture {
+    max-width: 100%;
+    height: auto; 
+    border-radius: none;
+}
+
+/* Nav Content */
 nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     position: relative;
 }
 
-/* Container for the menu and label */
 #menu-toggle {
     position: fixed; 
     top: 0;
@@ -127,12 +160,10 @@ nav {
     z-index: 1000; 
 }
 
-/* Hide the checkbox */
 #toggle {
     display: none;
 }
 
-/* Styling for the menu toggle label */
 #menu-toggle label {
     display: block;
     block-size: auto;
@@ -148,7 +179,6 @@ nav {
     position: relative; 
 }
 
-/* Styling for the menu items */
 #menu-toggle ul {
     display: none;
     flex-direction: column;
@@ -178,7 +208,6 @@ nav {
     background-color: #F6D64A;
 }
 
-/* Show menu when checkbox is checked */
 #toggle:checked + label + ul {
     display: flex;
 }
@@ -275,7 +304,6 @@ nav {
     margin-bottom: 5px;
 }
 
-
 /* About Section */
 #about {
     background: #499BD2;
@@ -323,7 +351,6 @@ nav {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 /* Contact Section */
 #contact {
@@ -476,23 +503,22 @@ select {
 
 footer {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
+    flex-direction: column;
     padding: 20px;
     background-color: #EAEAEA;
     text-align: center;
 }
 
 footer a {
-    margin: 10px; 
-    padding: 10px 20px;
-    color: #333; 
-    display: inline-block; 
-}
+
+    margin-top: 20px;
+    padding: 20px; 
+    color: #333;
 }
  
 /* Tablet */
 @media (min-width: 768px) {
+
 #logo {
     flex-shrink: 0;
 }
@@ -574,43 +600,56 @@ nav ul{
     font-family: 'Montserrat', sans-serif;
     padding: 10px 50px;
     justify-content: right;
-    margin-right: 50px;
+    margin-left: 50px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-}
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    padding: 20px;
-    background-color: #EAEAEA;
-    text-align: center;
-}
-
-footer p    {
-    margin: 10px; 
-    padding: 10px 20px;
-    color: #333; 
-    display: inline-block; 
-}
-
-footer a {
-    margin: 10px; 
-    padding: 10px 20px;
-    color: #333; 
-    display: inline-block; 
 }
 }
 
 
 /* Web */
 @media (min-width: 1920px) {
+#intro {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left; 
+}
+
+#intro h2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#intro p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    font-size: 1.2em;
+    line-height: 1.6; 
+    margin-bottom: 20px;
+}
+
+#img-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 10px; 
+}
+
+#img-grid img, #img-grid picture {
+    max-width: 100%;
+    height: auto;
+    border-radius: none; 
+}
+
 #logo {
     flex-shrink: 0;
 }
 #logo img {
-    width: 200px;
+    width: 300px;
     height: auto; 
 }
 #menu-toggle {
